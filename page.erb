@@ -1,0 +1,12 @@
+---
+layout: mypage
+title: <%= item["title"].capitalize %>
+data: <%= item["wp:post_date_gmt"] %> +0000
+comments: true
+sharing: false
+footer: true
+post_id: <%= item["wp:post_id"] %>
+permalink: <%= item["permalink"] %>
+---
+
+<%= item["content:encoded"] %>

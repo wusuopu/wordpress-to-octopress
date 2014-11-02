@@ -1,0 +1,12 @@
+---
+layout: post
+title: <%= item["title"] %>
+data: <%= item["wp:post_date_gmt"] %> +0000
+comments: true
+post_id: <%= item["wp:post_id"] %>
+permalink: /archives/<%= item["wp:post_id"] %>.html
+categories: <%= item["category"] %>
+tags: <%= item["tag"] %>
+---
+
+<%= item["content:encoded"] %>
